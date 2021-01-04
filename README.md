@@ -1,5 +1,5 @@
 # VoucherPoolSpringAPI
-##<b>A Spring Boot API for Voucher Pool <b>
+<b>A Spring Boot API for Voucher Pool <b>
 
 RESTful API using Spring Boot, JPA hibernate and H2, One to Many, Many to One bidirectional mapping
 
@@ -21,9 +21,9 @@ DB can be reached after running application at :- http://localhost:3030/vp/h2
 User Name : sa <br>
 Password : <Blank>
 
-##<b>RESTful API endpoints<b><br>
+<b>RESTful API endpoints<b><br><br>
 A collection file for Postman has been exported and located in the above files.<br>
-Port = 3030
+Port = 3030<br><br>
 <table>
   <tr>
     <th><b>METHOD<b></th>
@@ -68,7 +68,7 @@ Port = 3030
   </tr>
 </table>
 
-##<b>Git Repo Clone <b>
+<b>Git Repo Clone <b>
 <br>
  ```
 git clone https://github.com/ravehaseo/VoucherPoolSpringAPI.git
