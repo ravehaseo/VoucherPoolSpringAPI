@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "4aaaa6a0-8c5a-4f78-ab63-7e958ef12d56",
+		"name": "VoucherPool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateOffer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/vp/offers/create?event=Christmas&discount=50&expires=2025-01-01&name1=royce&email1=roycefoo@hotmail.com&name2=Foo&email2=royce4@hotmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"vp",
+						"offers",
+						"create"
+					],
+					"query": [
+						{
+							"key": "event",
+							"value": "Christmas"
+						},
+						{
+							"key": "discount",
+							"value": "50"
+						},
+						{
+							"key": "expires",
+							"value": "2025-01-01"
+						},
+						{
+							"key": "name1",
+							"value": "royce"
+						},
+						{
+							"key": "email1",
+							"value": "roycefoo@hotmail.com"
+						},
+						{
+							"key": "name2",
+							"value": "Foo"
+						},
+						{
+							"key": "email2",
+							"value": "royce4@hotmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecipientByEmail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/vp/recipient/roycefoo@hotmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"vp",
+						"recipient",
+						"roycefoo@hotmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVoucherByVoucherNo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/vp/voucherNo/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"vp",
+						"voucherNo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVouchersByEmail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/vp/vouchers/roycefoo@hotmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"vp",
+						"vouchers",
+						"roycefoo@hotmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validateVoucherByExpiryDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validateVoucherUsage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "redeemVoucher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/vp/redeem?voucherNo=rHgPsJMb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"vp",
+						"redeem"
+					],
+					"query": [
+						{
+							"key": "voucherNo",
+							"value": "rHgPsJMb"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
